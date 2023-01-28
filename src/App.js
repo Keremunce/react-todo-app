@@ -9,6 +9,7 @@ import Layout from './components/layout';
 function App() {
   return (
     <div className='App bg-sky-100 h-screen p-3'>
+      <h1>Kerem</h1>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Main />} />
