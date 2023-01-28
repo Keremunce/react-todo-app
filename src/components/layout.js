@@ -1,9 +1,9 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+// import { Outlet } from 'react-router-dom'
 import Nav from './nav'
 import Sidebar from './sidebar'
 
-export default function Layout() {
+export default function Layout({children}) {
 return (
     <div className='grid grid-cols-12 gap-4 w-full h-full'>
         <Sidebar></Sidebar>
@@ -11,7 +11,8 @@ return (
             <Nav></Nav>
             
             {/* <Tasks></Tasks> */}
-            <Outlet></Outlet>
+            {/* <Outlet></Outlet> */}
+            {children}
         </div>
     </div>
 )
