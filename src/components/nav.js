@@ -4,17 +4,18 @@ import { MagnifyingGlassIcon, PlusSmallIcon, FunnelIcon, AdjustmentsHorizontalIc
 import ReactShortcut from 'react-shortcut';
 import {useRef} from  'react';
 import CreateTaskModal from './CreateTaskModal';
-// import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Nav(){
     const inputRef = useRef(null);
 
     const {showModal, setShowModal} = useContext(GlobalContext)
-    // const location = useLocation();
-    // const Path = location.pathname[1].toUpperCase() + location.pathname.slice(2, location.pathname.length);
+    const location = useLocation();
+    const Path = location.pathname[1].toUpperCase() + location.pathname.slice(2, location.pathname.length);
+    console.log(Path);
     return(
         <>
-            <ReactShortcut keys="command+k" onKeysPressed={() => {inputRef.current.focus()}}/>
+            <ReactShortcut keys={['command+k', 'ctrl+k']} onKeysPressed={() => {inputRef.current.focus()}}/>
             <div className="rounded-xl mainTopSection bg-indigo-500 flex justify-start items-center p-2">
 
                 <button className='w-10 p-2 text-white hover:bg-indigo-600 transition rounded-md'>
@@ -27,7 +28,7 @@ function Nav(){
                 </div>
 
                 <div className='text-white mr-auto'>
-                    <p>Kerem</p>
+                    <p>{Path}</p>
                 </div>
 
 

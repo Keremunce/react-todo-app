@@ -18,9 +18,9 @@ function Sidebar() {
 
             <div className="prose lg:prose-md text-left flex flex-col justify-start items-strect space-y-1 mt-3">
                 
-                <NavLink to="inbox" className='text-left flex justify-start items-center hover:bg-gray-100 p-2 rounded-md transition text-sm antialiased hover:subpixel-antialiased'><InboxIcon className='w-4 mr-2 text-blue-700'></InboxIcon> Inbox</NavLink>
-                <NavLink to="today" className='text-left flex justify-start items-center hover:bg-gray-100 p-2 rounded-md transition text-sm antialiased hover:subpixel-antialiased'><CalendarIcon className='w-4 mr-2 text-gray-500'></CalendarIcon> Today</NavLink>
-                <NavLink to="upcoming" className='text-left flex justify-start items-center hover:bg-gray-100 p-2 rounded-md transition text-sm antialiased hover:subpixel-antialiased'><CalendarDaysIcon className='w-4 mr-2 text-gray-500'></CalendarDaysIcon> Upcoming</NavLink>
+                <NavLink to="inbox" className='text-left no-underline flex justify-start items-center hover:bg-gray-100 p-2 rounded-md transition text-sm antialiased hover:subpixel-antialiased'><InboxIcon className='w-4 mr-2 text-blue-700'></InboxIcon> Inbox</NavLink>
+                <NavLink to="today" className='text-left no-underline flex justify-start items-center hover:bg-gray-100 p-2 rounded-md transition text-sm antialiased hover:subpixel-antialiased'><CalendarIcon className='w-4 mr-2 text-gray-500'></CalendarIcon> Today</NavLink>
+                <NavLink to="upcoming" className='text-left no-underline flex justify-start items-center hover:bg-gray-100 p-2 rounded-md transition text-sm antialiased hover:subpixel-antialiased'><CalendarDaysIcon className='w-4 mr-2 text-gray-500'></CalendarDaysIcon> Upcoming</NavLink>
             </div>
 
             <div className="flex justify-between items-center rounded-md p-1 mb-1">
@@ -49,7 +49,7 @@ function Sidebar() {
                 </div>
             </div>
 
-            <hr className='mt-auto mb-5'/>
+            <hr className='mt-auto mb-2 border-gray-200'/>
 
             <div className="prose lg:prose-md text-left flex flex-col justify-evenly items-strech text-sm">
                 <div className='flex w-full justify-evenly items-center'>
