@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+:root{
+  --theme-clr: #6264ec;
+  --search-clr: #866BFF;
+}
+
+#check-box-1:checked ~ .check-1{
+  @apply text-opacity-100;
+  -webkit-animation: check-anime 0.5s 1;
+  -moz-animation:    check-anime 0.5s 1;
+  -o-animation:      check-anime 0.5s 1;
+  -ms-transition:    check-anime 0.5s 1; 
+  animation:         check-anime 0.5s 1;
+  transform: translate(-50%, -60%);
+
+}
+@keyframes check-anime{
+  0%, 100%{
+    transform: translate(-50%, -60%) scale(1);
+  }
+  50%{
+    transform: translate(-50%, -60%) scale(1.5)
+  }
+}
+@-moz-keyframes check-anime{
+  0%, 100%{
+    transform: translate(-50%, -60%) scale(1)
+  }
+  50%{
+    transform: translate(-50%, -60%) scale(1.5)
+  }
+}
+@-webkit-keyframes check-anime{
+  0%, 100%{
+    transform: translate(-50%, -60%) scale(1)
+  }
+  50%{
+    transform: translate(-50%, -60%) scale(1.5)
+  }
+}
+@-o-keyframes check-anime{
+  0%, 100%{
+    transform: translate(-50%, -60%) scale(1)
+  }
+  50%{
+    transform: translate(-50%, -60%) scale(1.5)
+  }
+}
+@-ms-keyframes check-anime{
+  0%, 100%{
+    transform: translate(-50%, -60%) scale(1)
+  }
+  50%{
+    transform: translate(-50%, -60%) scale(1.5)
+  }
+}

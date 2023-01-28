@@ -1,0 +1,2 @@
+#node_modules isimli klasörün tamamı göz ardı edilir.
+node_modules/
